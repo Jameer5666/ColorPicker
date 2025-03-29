@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body>
+    <h1>Color And Picker</h1>
+    <div class="main">
+            <h2 id="head" contenteditable="true" style="outline: none; ">Type here...</h1>
+            <div class="container">
+                <h3 style="background-color: rgba(194, 149, 245, 0.863); color: white; padding: .2rem; border-radius: 3px;">Choose background Color</h3>
+                <div class="slides">
+                    <button onclick="ChangeBackgroundColor('red')" style="background-color: red;"></button>
+                    <button onclick="ChangeBackgroundColor('green')" style="background-color: green;"></button>
+                    <button onclick="ChangeBackgroundColor('blue')" style="background-color: blue;"></button>
+                    <button onclick="ChangeBackgroundColor('pink')" style="background-color: pink;"></button>
+                    <button onclick="ChangeBackgroundColor('black')" style="background-color: black;"></button>
+                    <button onclick="ChangeBackgroundColor('rgb(252, 9, 94)')" style="background-color: rgb(252, 9, 94);"></button>
+                    <button onclick="ChangeBackgroundColor('rgb(5, 183, 237)')" style="background-color: rgb(5, 183, 237);"></button>
+                    <button onclick="ChangeBackgroundColor('rgb(231, 231, 6)')" style="background-color: rgb(231, 231, 6);"></button>
+                    <button onclick="ChangeBackgroundColor('rgb(181, 3, 235)')" style="background-color: rgb(181, 3, 235);"></button>
+                    <button onclick="ChangeBackgroundColor('rgb(169, 222, 9)')" style="background-color: rgb(169, 222, 9);"></button>
+                </div>
+                <h3 style="color: rgb(5, 183, 247);">Choose Color</h3>
+                <div class="slides">
+                        <button onclick="ChangeColor('red')" style="background-color: red;"></button>
+                        <button onclick="ChangeColor('green')" style="background-color: green;"></button>
+                        <button onclick="ChangeColor('blue')" style="background-color: blue;"></button>
+                        <button onclick="ChangeColor('pink')" style="background-color: pink;"></button>
+                        <button onclick="ChangeColor('white')" style="background-color: rgb(225, 240, 237);"></button>
+                        <button onclick="ChangeColor('rgb(252, 9, 94)')" style="background-color: rgb(252, 9, 94);"></button>
+                        <button onclick="ChangeColor('rgb(5, 183, 237)')" style="background-color: rgb(5, 183, 237);"></button>
+                        <button onclick="ChangeColor('rgb(231, 231, 6)')" style="background-color: rgb(231, 231, 6);"></button>
+                        <button onclick="ChangeColor('rgb(181, 3, 235)')" style="background-color: rgb(181, 3, 235);"></button>
+                        <button onclick="ChangeColor('rgb(169, 222, 9)')" style="background-color: rgb(169, 222, 9);"></button>
+
+                    </div>
+
+                    <h3 style="font-family: cursive;">Choose Font Style</h3>
+                    <div class="slides">
+                            
+                            <button onclick="ChangeFontStyle('cursive')" style="font-family: cursive; background: none;">Font</button>
+                            <button onclick="ChangeFontStyle('fantasy')" style="font-family: fantasy;  background: none;">Font</button>
+                            <button onclick="ChangeFontStyle('monospace')" style="font-family: monospace;  background: none;">Font</button>
+                            <button onclick="ChangeFontStyle('sans-serif')" style="font-family: sans-serif;  background: none;">Font</button>
+                            <button onclick="ChangeFontStyle('serif')" style="font-family: serif;  background: none;">Font</button>
+                            <button onclick="ChangeFontStyle('Trebuchet MS')" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  background: none;">Font</button>
+                            <button onclick="ChangeFontStyle('Georgia')" style="font-family: Georgia, 'Times New Roman', Times, serif;  background: none;">Font</button>
+                            <button onclick="ChangeFontStyle('Montserrat')" style="font-family:Montserrat,sans-serif; background: none;">Font</button>
+                            <button onclick="ChangeFontStyle('Verdana')" style="font-family: Verdana, Geneva, Tahoma, sans-serif;  background: none;">Font</button>    
+                </div>
+
+                <h3>Choose Font Size</h3>
+                <div style="display: flex; column-gap: .4rem;" >
+                <input type="range" style="display: inline-block;" name="sz" min="5" max="100" id="range"><Strong><span style="display: inline-block;" id="range_val" ></span></Strong>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
