@@ -34,11 +34,20 @@ h1{
 }
 h2{
     height: 355px;
-    width: 340px;
-    padding: 5px;
+    width: 345px;
+    padding: .7rem;
+    overflow-y: scroll;
+    scrollbar-color: #007 #d5b8ed ;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
     border-radius: .4rem;
     border: 1px solid ;
 }
+button img{
+    background-size: cover;
+    width: 15px;
+}
+
 .slides{
     display: flex;
     /* flex-direction: column; */
@@ -52,6 +61,22 @@ border-radius: .3rem;
 transition: 1s; 
 }
 
+.font-style{
+    height: 1rem;
+    width: 1.8rem;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+}
+.font-style:hover{
+box-shadow: 0px 0px 2px 4px #eceaf2;
+border-radius: .3rem;
+transition: 59ms; 
+transform: scale(1.2);
+}
+
 button{
     height: 1rem;
     width: 1rem;
@@ -61,8 +86,28 @@ button{
     cursor: pointer;
 }
 button:hover{
-box-shadow: 0px 2px 4px 6px #eceaf2;
+box-shadow: 0px 0px 2px 4px #eceaf2;
 border-radius: .3rem;
-transition: 59ms; 
+transition: 58ms; 
 transform: scale(1.2);
+}
+
+.download-btn {
+    
+    /* top: 20px; */
+    /* right: 20px; */  
+    /* background-color: #4CAF50; */
+    /* color: white; */
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.download-btn:hover {
+    background-color: #45a049;
 }
